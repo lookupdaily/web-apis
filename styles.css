@@ -101,3 +101,8 @@ nav ul {
 .full-screen button {
   margin: auto;
 }
+
+.full-screen button:active {
+  border: none;
+  outline: none;
+}
