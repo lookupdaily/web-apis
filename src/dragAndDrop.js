@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
         event.target.appendChild(document.getElementById(data));
         document.getElementById('drop-text').classList.add('hidden');
         document.getElementById('drag-drop-info').classList.remove('hidden');
+        dropZone.removeEventListener('drop', handleDrop);
     }
     
 })
