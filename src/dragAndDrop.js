@@ -29,5 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
     
 })
 
-
+//TODO reset original positions using nav button
+//TODO drag and drop files: https://jsbin.com/hiqasek/edit?html,js,output
 
