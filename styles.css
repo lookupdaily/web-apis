@@ -2,19 +2,31 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#item1 {
-    background-color: salmon;
-    color: #ffffff;
+.box {
     display: flex;
     font-size: 2rem;
     font-weight: bold;
     height: 250px;
     padding: 10px;
-    text-align: centre;
     width: 300px;
 }
 
-#item1 p {
+.box p {
     margin: auto;
 }
+
+.bg-salmon {
+    background-color: salmon;
+    color: #ffffff;
+}
+
+.outline-dotted {
+    border: dashed 3px slateblue;
+}
+
+.hidden {
+    display: none;
+}
+
+
 

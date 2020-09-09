@@ -1,0 +1,29 @@
+"use strict";
+
+window.addEventListener('DOMContentLoaded', () => {
+    var dragElement = document.getElementById('item');
+    dragElement.addEventListener('dragstart', handleDragStart)
+    
+    var dropZone = document.getElementById('target');
+    dropZone.addEventListener('dragover', handleDragOver);
+    dropZone.addEventListener('drop', handleDrop);
+
+    function handleDragStart(event) {
+        event.dataTransfer.setData("application/my-app", event.target.id);
+        event.dataTransfer.dropEffect = "move";
+        // dropZone.classList.toggle('hidden');     
+    }
+    
+    function handleDragOver(event) {
+        event.preventDefault();
+        event.dataTransfer.dropEffect = "move";
+    }
+
+    function handleDrop(event) {
+        event.preventDefault();
+        const data = event.dataTransfer.getData("application/my-app");
+        event.target.appendChild(document.getElementById(data));
+        console.log('that worked!')
+    }
+})
+
