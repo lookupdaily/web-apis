@@ -1,0 +1,79 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: darkslateblue;
+}
+
+button {
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.active-page {
+    list-style-type: '-';
+}
+
+.active-page button {
+    text-decoration: underline;
+}
+
+.link-expand {
+    padding: 0 5px;
+}
+
+h1 {
+    color: darkslateblue;
+}
+
+aside {
+    background-color: slateblue;
+    color: white;
+    padding: 10px;
+    width: 450px;
+}
+
+aside a {
+    color: white;
+}
+
+nav ul {
+    list-style-type: '>';
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 250px;
+    padding: 10px;
+    width: 300px;
+}
+
+.box p {
+    margin: auto;
+}
+
+.bg-salmon {
+    background-color: salmon;
+    color: #ffffff;
+}
+
+.outline-dotted {
+    border: dashed 3px slateblue;
+}
+
+.hidden {
+    display: none;
+}
+
+#target {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
