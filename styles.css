@@ -8,6 +8,11 @@ body {
   color: darkslateblue;
 }
 
+h1 {
+  font-size: 3.5rem;
+  padding-left: 40px;
+}
+
 button {
   color: inherit;
   font-family: inherit;
@@ -20,6 +25,23 @@ button {
 button:hover {
   background-color: slateblue;
   color: #fff
+}
+
+.btn-lg {
+  font-size: 1.2rem;
+  padding: 20px 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+nav li {
+  font-size: 1.2rem;
+}
+
+.btn-lg:hover {
+  background-color: salmon;
+  color: darkslateblue;
+  font-weight: 600;
 }
 
 .active-page {
@@ -38,18 +60,19 @@ h1 {
   color: darkslateblue;
 }
 
-aside {
+.info {
   background-color: slateblue;
   color: white;
   padding: 10px;
   width: 450px;
+  font-size: 1.1rem;
 }
 
-aside a {
+.info a {
   color: white;
 }
 
-aside p, aside h3 {
+.info p, .info h3 {
   padding-left: 25px;
 }
 
@@ -70,8 +93,8 @@ nav ul {
 
 .box {
   display: flex;
+  flex-direction: column;
   font-size: 2rem;
-  font-weight: bold;
   height: 250px;
   width: 300px;
 }
@@ -82,7 +105,12 @@ nav ul {
 
 .bg-salmon {
   background-color: salmon;
-  color: #ffffff;
+  color: darkslateblue;
+}
+
+.bg-purple {
+  background-color: slateblue;
+  color: #fff;
 }
 
 .outline-dotted {

@@ -11,7 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
       if(document.exitFullscreen) {
         document.exitFullscreen()
         element.classList.remove('full-screen')
-      document.getElementById('full-screen-toggle').textContent = 'Make me full screen'
+        document.getElementById('full-screen-toggle').textContent = 'Make me full screen'
+        document.getElementById('full-screen-info').classList.remove('hidden')
       }
     }
   }
