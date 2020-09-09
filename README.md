@@ -12,7 +12,7 @@
 - web speech API (speech input and text-to-speech)
 - geolocation
 - full screen API
-- web storage or session storage
+- web storage
 - drag and drop
 - XMLHttpRequest2 for making data requests
 

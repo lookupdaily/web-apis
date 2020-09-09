@@ -3,9 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HTML Web APIs</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" /> 
 </head>
 <body>
-  <script src="script.js"></script>
+  <header>
+    <h1>HTML Web APIs</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><button>HTML Drag and Drop</button></li>
+      <li><button>Full Screen</button></li>
+      <li><button>Geolocation</button></li>
+      <li><button>Audio context</button></li>
+    </ul>
+  </nav>
+  <article>
+    <h2>HTML Drag and Drop</h2>
+    <p>HTML drag-and-drop uses the DOM event model and <i>drag events</i>, inherited from mouse events.</p>
+    <div id="item1" draggable="true"> Click and hold me to move! </div>
+  </article>
+  <script src="src/dragAndDrop.js"></script>
 </body>
 </html>
