@@ -2,3 +2,19 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+#item1 {
+    background-color: salmon;
+    color: #ffffff;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 250px;
+    padding: 10px;
+    text-align: centre;
+    width: 300px;
+}
+
+#item1 p {
+    margin: auto;
+}
+
