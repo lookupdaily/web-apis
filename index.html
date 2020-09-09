@@ -12,18 +12,27 @@
   </header>
   <nav>
     <ul>
-      <li><button>HTML Drag and Drop</button></li>
+      <li><button id="nav-drag">HTML Drag and Drop</button></li>
       <li><button>Full Screen</button></li>
       <li><button>Geolocation</button></li>
       <li><button>Audio context</button></li>
     </ul>
   </nav>
-  <article>
+  <article class="hidden" id="article-drag-drop">
     <h2>HTML Drag and Drop</h2>
     <p>HTML drag-and-drop uses the DOM event model and <i>drag events</i>, inherited from mouse events.</p>
     <div class="box bg-salmon" id="item" draggable="true"><p>Drag me!</p></div>
-    <div class="box outline-dotted" id="target"><p>Drop your item here</p></div>
+    <div class="box outline-dotted hidden" id="target"><p id="drop-text">Drop here</p></div>
+    <aside id="drag-drop-info" class="hidden">
+      <h3>Uses for drag and drop:</h3>
+      <ul>
+        <li>File uploading</li>
+        <li>Reordering items in a list</li>
+        <li>Copying items</li>
+      </ul>
+    </aside>
   </article>
+  <script src="src/nav.js"></script>
   <script src="src/dragAndDrop.js"></script>
 </body>
 </html>
