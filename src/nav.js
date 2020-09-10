@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
   var navDrag = document.getElementById('nav-link-drag');
   var navFullScreen = document.getElementById('nav-link-full-screen');
   var navGeolocation = document.getElementById('nav-link-geolocation');
+  var navAudio = document.getElementById('nav-link-audio');
 
   navDrag.addEventListener('click', function() {
     toggleNav('drag');
@@ -14,6 +15,10 @@ window.addEventListener('DOMContentLoaded', () => {
   navGeolocation.addEventListener('click', function() {
     toggleNav('geolocation');
   });
+
+  navAudio.addEventListener('click', function() {
+    toggleNav('audio')
+  })
 })
 
 function toggleNav(section) {
