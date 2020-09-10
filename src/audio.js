@@ -24,6 +24,7 @@ window.onload = function() {
         } else if (this.dataset.playing === 'true') {
             audioElement.pause();
             this.dataset.playing = 'false';
+                document.getElementById('audio-info').classList.remove('hidden');
         }
     }
 
