@@ -44,7 +44,7 @@
     <p>The Fullscreen API can be used to place a given element into full-screen mode, as well as to detect when the browser enters or exits full-screen mode.</p>
     <section class="container">
       <div class="column">
-        <div class="box bg-salmon column" id="item-full-screen">
+        <div class="box bg-salmon column text-lg" id="item-full-screen">
           <button id="full-screen-toggle">Make me full screen</button>
         </div>
       </div>
@@ -68,9 +68,11 @@
     <section class="container">
       <div class="column">
         <button class="btn-lg bg-purple" id="locator-btn">Find my location</button>
-        <div class="box bg-salmon info hidden" id="lat-long">
-          <p><strong>Latitude: </strong><span id="lat"></span></p>
-          <p><strong>Longitude: </strong><span id="long"></span></p>
+        <div class="box-wide bg-salmon info hidden text-small" id="lat-long">
+          <div>
+            <p><strong>Latitude: </strong><span id="lat"></span></p>
+            <p><strong>Longitude: </strong><span id="long"></span></p>
+          </div>
         </div>
       </div>
       <div class="column">

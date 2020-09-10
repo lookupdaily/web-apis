@@ -95,20 +95,28 @@ nav ul {
 }
 
 .box {
-  justify-content: center;
   display: flex;
-  flex-direction: column;
-  font-size: 2rem;
   height: 250px;
   width: 300px;
 }
 
-.box p {
-  margin: auto;
+.box-wide {
+  display: flex;
+  min-height: 150px;
+  height: auto;
+  width: 350px;
 }
 
-.box button:hover {
-  padding: 88px 20px;
+.text-lg {
+  font-size: 2rem;
+}
+
+.text-small {
+  font-size: 1.1rem;
+}
+
+.box p, .box-wide div {
+  margin: auto;
 }
 
 .bg-salmon {
