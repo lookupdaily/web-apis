@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleNav('full-screen');
   });
 
-  navGeolocation = addEventListener('click', function() {
+  navGeolocation.addEventListener('click', function() {
     toggleNav('geolocation');
   });
 })
