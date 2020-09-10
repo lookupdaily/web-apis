@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener('DOMContentLoaded', () => {
     //to provide support on legacy browsers
     const AudioContext = window.AudioContext || window.webkitAudioContext;
 
@@ -28,4 +28,4 @@ window.onload = function() {
         }
     }
 
-}
+})
