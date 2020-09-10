@@ -1,15 +1,22 @@
 window.addEventListener('DOMContentLoaded', () => {
-  var navDragandDrop = document.getElementById('nav-link-drag');
+  var navDrag = document.getElementById('nav-link-drag');
   var navFullScreen = document.getElementById('nav-link-full-screen');
+  var navGeolocation = document.getElementById('nav-link-geolocation');
 
-  navDragandDrop.addEventListener('click', function() {
-    document.getElementById('article-drag-drop').classList.toggle('hidden');
-    document.getElementById('nav-item-drag').classList.toggle('active-page');
+  navDrag.addEventListener('click', function() {
+    toggleNav('drag');
   });
 
   navFullScreen.addEventListener('click', function() {
-    document.getElementById('article-full-screen').classList.toggle('hidden');
-    document.getElementById('nav-item-full-screen').classList.toggle('active-page');
-  })
+    toggleNav('full-screen');
+  });
 
+  navGeolocation = addEventListener('click', function() {
+    toggleNav('geolocation');
+  });
 })
+
+function toggleNav(section) {
+  document.getElementById(`article-${section}`).classList.toggle('hidden');
+  document.getElementById(`nav-item-${section}`).classList.toggle('active-page');
+}

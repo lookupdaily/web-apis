@@ -1,3 +1,6 @@
+html {
+  font-size: 20px;
+}
 article {
   padding: 0 40px;
 }
@@ -9,7 +12,7 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding-left: 40px;
 }
 
@@ -92,6 +95,7 @@ nav ul {
 }
 
 .box {
+  justify-content: center;
   display: flex;
   flex-direction: column;
   font-size: 2rem;
@@ -101,6 +105,10 @@ nav ul {
 
 .box p {
   margin: auto;
+}
+
+.box button:hover {
+  padding: 88px 20px;
 }
 
 .bg-salmon {
