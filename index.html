@@ -13,7 +13,7 @@
   <nav>
     <ul>
       <li id="nav-item-drag"><button id="nav-link-drag">Drag and Drop</button></li>
-      <li id="nav-item-full-screen"><button id="nav-link-full-screen">Full Screen</button></li>
+      <li id="nav-item-full-screen"><button id="nav-link-full-screen" draggable="true">Full Screen</button></li>
       <li id="nav-item-geolocation"><button id="nav-link-geolocation">Geolocation</button></li>
       <li><button>Audio context</button></li>
     </ul>
@@ -33,9 +33,9 @@
           </ul>
           <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API">MDN</a></p>
         </aside>
-        <div class="box bg-salmon" id="item" draggable="true"><p>Drag me!</p></div>
+        <div class="box bg-salmon text-lg" id="item" draggable="true"><p>Drag me!</p></div>
       </div>
-    <div class="box outline-dotted hidden column" id="target"><p id="drop-text">Drop here</p></div>
+    <div class="box outline-dotted hidden column text-lg" id="target"><p id="drop-text">Drop here</p></div>
     </section>
   </article>
 
@@ -89,10 +89,42 @@
     </section>
   </article>
 
+  <article id="article-audio">
+    <h2>Web Audio API</h2>
+    <p>The Web Audio API complements the media element, allowing complex audio processing and audio controls.</p>
+    <section class="container">
+      <div class="column">
+        <audio controls>
+          <source src="assets/Kalimba.mp3" type="audio/mp3" />
+          <source src="assets/Kalimba.ogg" type="audio/ogg" />
+          <source src="assets/Kalimba.wav" type="audio/wav" />
+          Your browser does not support HTML5 audio. Here is a 
+          <a href="assets/Kalimba.mp3">link to the audio</a> 
+          instead.
+        </audio>
+        <button id="play-btn" data-playing="false" role="switch" aria-checked="false" class="btn-lg bg-purple">
+          Play / Pause
+        </button> 
+      </div>
+      <div class="column">
+        <aside id="audio-info" class="info">
+          <h3>Uses for Web Audio API:</h3>
+          <ul>
+            <li>Custom styling for audio player (least friendly for accessibility)</li>
+            <li>Visualisations</li>
+            <li>Audio processing/effects</li>
+          </ul>
+          <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API">MDN</a></p>
+        </aside> 
+      </div>
+    </section>
+  </article>
+
 
   <script src="src/nav.js"></script>
   <script src="src/dragAndDrop.js"></script>
   <script src="src/fullScreen.js"></script>
   <script src="src/geolocation.js"></script>
+  <script src="src/audio.js"></script>
 </body>
 </html>

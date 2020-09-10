@@ -1,5 +1,3 @@
-"use strict";
-
 window.addEventListener('DOMContentLoaded', () => {
     var dragElement = document.getElementById('item');
     dragElement.addEventListener('dragstart', handleDragStart)
@@ -11,7 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
     function handleDragStart(event) {
         event.dataTransfer.setData("application/my-app", event.target.id);
         event.dataTransfer.dropEffect = "move";
-        dropZone.classList.remove('hidden');     
+        dropZone.classList.remove('hidden');
+        console.log('hello')     
     }
     
     function handleDragOver(event) {
