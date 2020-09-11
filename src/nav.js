@@ -6,18 +6,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
   navDrag.addEventListener('click', function() {
     toggleNav('drag');
-  });
+  })
 
   navFullScreen.addEventListener('click', function() {
     toggleNav('full-screen');
-  });
+  })
 
   navGeolocation.addEventListener('click', function() {
     toggleNav('geolocation');
-  });
+  })
 
   navAudio.addEventListener('click', function() {
-    toggleNav('audio')
+    toggleNav('audio');
   })
 })
 

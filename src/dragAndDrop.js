@@ -9,8 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function handleDragStart(event) {
         event.dataTransfer.setData("application/my-app", event.target.id);
         event.dataTransfer.dropEffect = "move";
-        dropZone.classList.remove('hidden');
-        console.log('hello')     
+        dropZone.classList.remove('hidden');    
     }
     
     function handleDragOver(event) {
