@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
   var navFullScreen = document.getElementById('nav-link-full-screen');
   var navGeolocation = document.getElementById('nav-link-geolocation');
   var navAudio = document.getElementById('nav-link-audio');
+  var navFetch = document.getElementById('nav-link-fetch');
 
   linksDOM.forEach(link => {
     link.addEventListener('click', function() {
@@ -25,6 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
   
   navAudio.addEventListener('click', function() {
     toggleNav('audio');
+  })
+
+  navFetch.addEventListener('click', function() {
+    toggleNav('fetch');
   })
 })
 
