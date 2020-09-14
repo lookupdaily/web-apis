@@ -18,7 +18,7 @@
       <li id="nav-item-full-screen"><button id="nav-link-full-screen" draggable="true">Full Screen</button></li>
       <li id="nav-item-geolocation"><button id="nav-link-geolocation">Geolocation</button></li>
       <li id="nav-item-audio"><button id="nav-link-audio">Audio context</button></li>
-      <li id="nav-item-fetch"><button id="nav-link-fetch">Fetch(ing data)</button></li>
+      <li id="nav-item-fetch"><button id="nav-link-fetch">Fetch</button></li>
     </ul>
   </nav>
 
@@ -165,16 +165,16 @@
     </section>
   </article>
 
-  <article id="article-fetch" class="">
-    <h2>Fetch</h2>
+  <article id="article-fetch" class="hidden">
+    <h2>Fetch API</h2>
     <p>The Fetch API provides an interface for fetching data or resources from different APIs or from a connected server.</p>
     <p>This API provides an alternative to <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a> used in AJAX programming, but provides a more powerful and flexible feature set.</p>
     <section class="container">
       <div class="column">
         <h3>Try it out:</h3>
-        <p>Fetch a random cat fact from <a ref="https://cat-fact.herokuapp.com/facts">cat-fact.herokuapp.com</a>by clicking below.</p>
-        <button class="btn-lg bg-purple" id="fetch-fact">Fetch cat fact</button>
-        <div class="info outline-pink hidden" id="cat-fact"></div>
+        <p>Fetch a random activity idea from <a href="https://www.boredapi.com/">boredapi.com</a>.</p>
+        <button class="btn-lg bg-purple" id="fetch-activity">Fetch activity idea</button>
+        <div class="info outline-pink hidden" id="activity"></div>
       </div>
       <div class="column">
         <aside id="audio-info" class="info">
