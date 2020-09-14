@@ -145,6 +145,12 @@ nav ul {
   border: dashed 3px slateblue;
 }
 
+.outline-pink {
+  background-color: transparent;
+  border: solid 3px salmon;
+  color: darkslateblue;
+}
+
 .hidden {
   display: none;
 }
