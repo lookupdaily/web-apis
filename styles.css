@@ -38,6 +38,14 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.btn-box {
+  display: block;
+  font-weight: 600;
+  width: 100%;
+  padding: 10px 32px;
+  text-align: left;
+}
+
 nav li {
   font-size: 1.2rem;
 }
@@ -87,12 +95,15 @@ h1 {
 
 .column {
   margin-bottom: 20px;
-  min-width: 600px;
+  min-width: 500px;
 }
 
 nav ul {
-  list-style-type: '>';
   margin: 0;
+}
+
+.link-list {
+  list-style-type: '>';
 }
 
 .box {
@@ -150,4 +161,10 @@ nav ul {
 .full-screen button:active {
   border: none;
   outline: none;
+}
+
+@media all and (min-width: 800px) {
+  .container {
+    justify-content: space-between;
+  }
 }

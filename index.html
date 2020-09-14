@@ -11,13 +11,54 @@
     <h1>HTML Web APIs</h1>
   </header>
   <nav>
-    <ul>
+    <ul class="link-list">
+      <li id="nav-item-dom"><button class="link-dom">The DOM</button></li>
       <li id="nav-item-drag"><button id="nav-link-drag">Drag and Drop</button></li>
       <li id="nav-item-full-screen"><button id="nav-link-full-screen" draggable="true">Full Screen</button></li>
       <li id="nav-item-geolocation"><button id="nav-link-geolocation">Geolocation</button></li>
       <li id="nav-item-audio"><button id="nav-link-audio">Audio context</button></li>
     </ul>
   </nav>
+
+  <article class="hidden" id="article-dom">
+    <h2>The Document Object Model (DOM)</h2>
+    <p>
+      The Document Object Model(DOM) connects web pages to scripts or programming languages by representing the structure of a document (e.g. HTML) in memory. 
+      It is one of the most used web APIs in web development as it enables us to create different types of interactivity with the webpage. 
+    </p>
+    <p>
+      The DOM represents a document with a logical tree. Each branch of the tree ends in a node, which contains objects. By referencing these objects, we can gain access to the tree,
+      and change the document's structure or content.
+    </p>
+    <p>
+      This page uses the DOM to create a basic navigation. When clicking on any of the links in the nav bar above, a script is triggered which toggles the visibility of different sections of the webpage.
+      Try it out by clicking below to hide this section.
+    </p>
+    <section class="container">
+      <div class="column">
+        <div class="info bg-salmon">
+          <h3>Try it out:</h3>
+          <ul class="link-list">
+            <li><button class="btn-box" id="toggle-bg">Change background colour</button></li>
+            <li><button class="btn-box" id="reset-bg">Reset background colour</button> </li>
+            <li><button class="btn-box link-dom">Close this section</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <aside id="dom-info" class="info">
+          <h3>Uses for the DOM API:</h3>
+          <ul>
+            <li>Changing styles on a web page: e.g toggling dark mode</li>
+            <li>Responding visually to user behaviour, such as scrolling or clicking</li>
+            <li>Navigation</li>
+          </ul>
+          <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">MDN</a></p>
+        </aside>
+      </div>
+    </section>
+    
+  </article>
 
   <article class="hidden" id="article-drag">
     <h2>Drag and Drop</h2>
@@ -123,6 +164,7 @@
   </article>
 
   <script src="src/nav.js"></script>
+  <script src="src/dom.js"></script>
   <script src="src/dragAndDrop.js"></script>
   <script src="src/fullScreen.js"></script>
   <script src="src/geolocation.js"></script>
