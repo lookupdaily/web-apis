@@ -1,22 +1,21 @@
 window.addEventListener('DOMContentLoaded', () => {
-  var btnFetch = document.getElementById('fetch-fact');
+  var btnFetch = document.getElementById('fetch-activity');
   btnFetch.addEventListener('click', fetchCatFact);
   var isFactVisible = false;
 
   function fetchCatFact() {
-    fetch('https://cat-fact.herokuapp.com/facts')
+    fetch('https://www.boredapi.com/api/activity')
     .then(response => response.json())
     .then(data => {
-      const randomIndex = Math.floor(Math.random() * data.all.length);
-      const fact = data.all[randomIndex]
-      document.getElementById('cat-fact').innerHTML = fact.text;
+      const activity = data.activity;
+      document.getElementById('activity').innerHTML = activity;
     })
     .then(makeFactVisible());
   };
   
   function makeFactVisible() {
     if(!isFactVisible) {
-      document.getElementById('cat-fact').classList.remove('hidden');
+      document.getElementById('activity').classList.remove('hidden');
       isFactVisible = false;
     }
   }
