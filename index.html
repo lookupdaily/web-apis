@@ -197,32 +197,31 @@
     <section class="container">
       <div class="column">
         <h3>Try it out:</h3>
-        <p>There are two mechanisms within Web Storage: `sessionStorage` annd `localStorage`.</p>
+        <p>There are two mechanisms within Web Storage: <b>sessionStorage</b> annd <b>localStorage</b>.</p>
         <p>
-          Try updating the information below and then work out the difference between the two by opening this page in a new tab and refreshing the page.
+          Try updating the information below and then work out the difference 
+          between the two by opening this page in a new tab and refreshing the page.
         </p>
-        <label for="input-pg-title">Change page title:</label>
-        <input type="text" id="input-pg-title" placeholder="HTML Web APIs">
-        <button id="submit-session-storage" class="bg-salmon">Save to session storage</button>
-        <label for="select-title-colour">Change title colour:</label>
-        <select id="select-title-colour">
-          <option value="Royal Blue">Royal Blue</option>
-          <option value="Hot Pink">Hot Pink</option>
-          <option value="Royal Blue">Royal Blue</option>
-          <option value="Tomato">Tomato</option>
-        </select>
-        <button id="submit-local-storage" class="bg-salmon">Save to local storage</button>
-        <a href="index.html" target="blank" class="bg-purple">Open page in new tab</a>
       </div>
       <div class="column">
-        <aside id="audio-info" class="info">
-          <h3>Uses for fetch:</h3>
-          <ul>
-            <li>Displaying data in real-time from a server</li>
-            <li>Creating news or social media feeds from third party sources</li>
-          </ul>
-          <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">MDN</a></p>
-        </aside> 
+        <div id="audio-info" class="box-wide outline-pink flex-column">
+          <div>
+            <label for="input-pg-title">Change page title:</label><br>
+            <input type="text" id="input-pg-title" placeholder="HTML Web APIs">
+            <button id="submit-session-storage" class="bg-salmon">Save to session storage</button>
+          </div>
+          <div>
+            <label for="select-title-colour">Change title colour:</label><br>
+            <select id="select-title-colour">
+              <option value="RoyalBlue">Royal Blue</option>
+              <option value="HotPink">Hot Pink</option>
+              <option value="Tomato">Tomato</option>
+              <option value="DarkSlateBlue">Slate Blue (original)</option>
+            </select>
+            <button id="submit-local-storage" class="bg-salmon">Save to local storage</button>
+          </div>
+          <a href="index.html" target="blank" class="bg-purple">Open page in new tab</a>
+        </div> 
       </div>
     </section>
   </article>

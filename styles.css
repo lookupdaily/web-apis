@@ -73,10 +73,6 @@ nav li {
   padding: 0 5px;
 }
 
-h1 {
-  color: darkslateblue;
-}
-
 .info {
   background-color: slateblue;
   color: white;
@@ -121,7 +117,12 @@ nav ul {
   display: flex;
   min-height: 150px;
   height: auto;
-  width: 350px;
+  width: 100%;
+}
+
+.flex-column {
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .text-lg {

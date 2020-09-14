@@ -3,10 +3,9 @@ window.addEventListener('DOMContentLoaded', () => {
   var btnLocalStorage = document.getElementById('submit-local-storage');
 
   btnSessionStorage.addEventListener('click', saveSessionStorage);
-  // btnLocalStorage.addEventListener('click', saveLocalStorage);
+  btnLocalStorage.addEventListener('click', saveLocalStorage);
 
   setTitle();
-  console.log(sessionStorage.pageTitle)
 })
 
 function saveSessionStorage() {
@@ -14,8 +13,17 @@ function saveSessionStorage() {
   setTitle();
 }
 
+function saveLocalStorage() {
+  localStorage.titleColour = document.getElementById('select-title-colour').value;
+  setTitle();
+}
+
 function setTitle() {
   if(sessionStorage.pageTitle) {
     document.getElementById('pgTitle').innerHTML = sessionStorage.pageTitle;
+  }
+
+  if(localStorage.titleColour) {
+    document.getElementById('pgTitle').style.color = localStorage.titleColour;
   }
 }
