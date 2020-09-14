@@ -7,8 +7,14 @@ article {
 
 body {
   background-color: ghostwhite;
+  display: flex;
   font-family: 'Courier New', Courier, monospace;
   color: darkslateblue;
+}
+
+main {
+  margin: auto;
+  max-width: 1370px;
 }
 
 h1 {
@@ -173,4 +179,8 @@ nav ul {
   .container {
     justify-content: space-between;
   }
+  .column {
+    max-width: 600px;
+  }
 }
+
