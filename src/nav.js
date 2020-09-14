@@ -1,8 +1,15 @@
 window.addEventListener('DOMContentLoaded', () => {
+  var linksDOM = document.querySelectorAll('.link-dom');
   var navDrag = document.getElementById('nav-link-drag');
   var navFullScreen = document.getElementById('nav-link-full-screen');
   var navGeolocation = document.getElementById('nav-link-geolocation');
   var navAudio = document.getElementById('nav-link-audio');
+
+  linksDOM.forEach(link => {
+    link.addEventListener('click', function() {
+      toggleNav('dom')
+    })
+  })
 
   navDrag.addEventListener('click', function() {
     toggleNav('drag');
@@ -15,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   navGeolocation.addEventListener('click', function() {
     toggleNav('geolocation');
   })
-
+s
   navAudio.addEventListener('click', function() {
     toggleNav('audio');
   })
