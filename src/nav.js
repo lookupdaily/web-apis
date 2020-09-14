@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   navGeolocation.addEventListener('click', function() {
     toggleNav('geolocation');
   })
-s
+  
   navAudio.addEventListener('click', function() {
     toggleNav('audio');
   })
