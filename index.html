@@ -11,7 +11,7 @@
     <h1>HTML Web APIs</h1>
   </header>
   <nav>
-    <ul>
+    <ul class="link-list">
       <li id="nav-item-dom"><button class="link-dom">The DOM</button></li>
       <li id="nav-item-drag"><button id="nav-link-drag">Drag and Drop</button></li>
       <li id="nav-item-full-screen"><button id="nav-link-full-screen" draggable="true">Full Screen</button></li>
@@ -38,9 +38,11 @@
       <div class="column">
         <div class="info bg-salmon">
           <h3>Try it out:</h3>
-          <button class="btn-box" id="toggle-bg">Change background colour</button>
-          <button class="btn-box" id="reset-bg">Reset background colour</button>   
-          <button class="btn-box link-dom">Close this section</button>
+          <ul class="link-list">
+            <li><button class="btn-box" id="toggle-bg">Change background colour</button></li>
+            <li><button class="btn-box" id="reset-bg">Reset background colour</button> </li>
+            <li><button class="btn-box link-dom">Close this section</button></li>
+          </ul>
         </div>
       </div>
       <div class="column">
@@ -51,7 +53,7 @@
             <li>Responding visually to user behaviour, such as scrolling or clicking</li>
             <li>Navigation</li>
           </ul>
-          <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API/Guide">MDN</a></p>
+          <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">MDN</a></p>
         </aside>
       </div>
     </section>
