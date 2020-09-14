@@ -189,6 +189,43 @@
       </div>
     </section>
   </article>
+
+  <article id="article-webstorage" class="">
+    <h2>Web Storage API</h2>
+    <p>The Web Storage API is useful for storing small amounts of data client-side without connecting to a server, useful when creating Progressive Web Apps.</p>
+    <p>The use of this API is synchronous, so the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache">Cache</a> interface and <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API">IndexedDB API</a> are more suitable for loading files offline, or for storing more complex data.</p>
+    <section class="container">
+      <div class="column">
+        <h3>Try it out:</h3>
+        <p>There are two mechanisms within Web Storage: `sessionStorage` annd `localStorage`.</p>
+        <p>
+          Try updating the information below and then work out the difference between the two by opening this page in a new tab and refreshing the page.
+        </p>
+        <label for="input-pg-title">Change page title:</label>
+        <input type="text" id="input-doc-title" value="HTML Web APIs" placeholder="Enter document title">
+        <button id="submit-session-storage" class="bg-salmon">Save to session storage</button>
+        <label for="select-title-colour">Change title colour:</label>
+        <select id="select-title-colour">
+          <option value="Royal Blue">Royal Blue</option>
+          <option value="Hot Pink">Hot Pink</option>
+          <option value="Royal Blue">Royal Blue</option>
+          <option value="Tomato">Tomato</option>
+        </select>
+        <button id="submit-local-storage" class="bg-salmon">Save to local storage</button>
+        <a href="index.html" target="blank" class="bg-purple">Open page in new tab</a>
+      </div>
+      <div class="column">
+        <aside id="audio-info" class="info">
+          <h3>Uses for fetch:</h3>
+          <ul>
+            <li>Displaying data in real-time from a server</li>
+            <li>Creating news or social media feeds from third party sources</li>
+          </ul>
+          <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">MDN</a></p>
+        </aside> 
+      </div>
+    </section>
+  </article>
 </main>
   <script src="src/nav.js"></script>
   <script src="src/dom.js"></script>
