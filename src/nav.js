@@ -5,6 +5,8 @@ window.addEventListener('DOMContentLoaded', () => {
   var navGeolocation = document.getElementById('nav-link-geolocation');
   var navAudio = document.getElementById('nav-link-audio');
   var navFetch = document.getElementById('nav-link-fetch');
+  var navStorage = document.getElementById('nav-link-webstorage');
+  console.log(navStorage)
 
   linksDOM.forEach(link => {
     link.addEventListener('click', function() {
@@ -30,6 +32,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   navFetch.addEventListener('click', function() {
     toggleNav('fetch');
+  })
+
+  navStorage.addEventListener('click', function() {
+    toggleNav('webstorage');
   })
 })
 

@@ -1,7 +1,7 @@
 html {
   font-size: 20px;
 }
-article {
+article, header {
   padding: 0 40px;
 }
 
@@ -18,7 +18,6 @@ main {
 
 h1 {
   font-size: 3rem;
-  padding-left: 40px;
 }
 
 button {
@@ -30,9 +29,26 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+input, select {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover, .btn:hover {
   background-color: slateblue;
+  font-weight: 500;
   color: #fff
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .btn-lg {
@@ -71,10 +87,6 @@ nav li {
 
 .link-expand {
   padding: 0 5px;
-}
-
-h1 {
-  color: darkslateblue;
 }
 
 .info {
@@ -121,7 +133,12 @@ nav ul {
   display: flex;
   min-height: 150px;
   height: auto;
-  width: 350px;
+  width: 100%;
+}
+
+.flex-column {
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .text-lg {
@@ -154,6 +171,42 @@ nav ul {
   background-color: transparent;
   border: solid 3px salmon;
   color: darkslateblue;
+}
+
+.outline-purple {
+  border: solid 1px slateblue;
+}
+
+.form {
+  display: block;
+  padding: 10px;
+}
+
+.form button, .form input, .form select {
+  border: solid 1px slateblue;
+  flex-grow: 1;
+  padding: 8px 10px;
+}
+
+.form button:hover {
+  color: darkslateblue;
+  background-color: salmon;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+}
+
+.form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.form-group {
+  margin-bottom: 20px;
 }
 
 .hidden {
