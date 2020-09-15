@@ -30,9 +30,26 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+input, select {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover, .btn:hover {
   background-color: slateblue;
+  font-weight: 500;
   color: #fff
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .btn-lg {
@@ -155,6 +172,42 @@ nav ul {
   background-color: transparent;
   border: solid 3px salmon;
   color: darkslateblue;
+}
+
+.outline-purple {
+  border: solid 1px slateblue;
+}
+
+.form {
+  display: block;
+  padding: 10px;
+}
+
+.form button, .form input, .form select {
+  border: solid 1px slateblue;
+  flex-grow: 1;
+  padding: 8px 10px;
+}
+
+.form button:hover {
+  color: darkslateblue;
+  background-color: salmon;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+}
+
+.form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.form-group {
+  margin-bottom: 20px;
 }
 
 .hidden {

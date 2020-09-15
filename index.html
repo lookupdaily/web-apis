@@ -192,35 +192,39 @@
 
   <article id="article-webstorage" class="">
     <h2>Web Storage API</h2>
-    <p>The Web Storage API is useful for storing small amounts of data client-side without connecting to a server, useful when creating Progressive Web Apps.</p>
+    <p>The Web Storage API can be used to store small amounts of data without connecting to a server, useful when creating Progressive Web Apps.</p>
     <p>The use of this API is synchronous, so the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache">Cache</a> interface and <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API">IndexedDB API</a> are more suitable for loading files offline, or for storing more complex data.</p>
     <section class="container">
       <div class="column">
         <h3>Try it out:</h3>
-        <p>There are two mechanisms within Web Storage: <b>sessionStorage</b> annd <b>localStorage</b>.</p>
+        <p>There are two mechanisms within Web Storage: <b>sessionStorage</b> and <b>localStorage</b>.</p>
         <p>
           Try updating the information below and then work out the difference 
           between the two by opening this page in a new tab and refreshing the page.
         </p>
       </div>
       <div class="column">
-        <div id="audio-info" class="box-wide outline-pink flex-column">
-          <div>
-            <label for="input-pg-title">Change page title:</label><br>
-            <input type="text" id="input-pg-title" placeholder="HTML Web APIs">
-            <button id="submit-session-storage" class="bg-salmon">Save to session storage</button>
+        <div id="audio-info" class="form outline-pink">
+          <div class="form-group">
+            <label for="input-pg-title">Change page title:</label>
+            <div class="form-row">
+              <input type="text" id="input-pg-title" class="outline-purple" placeholder="HTML Web APIs">
+              <button id="submit-session-storage" class="bg-purple">Save to sessionStorage</button>
+            </div>
           </div>
-          <div>
-            <label for="select-title-colour">Change title colour:</label><br>
-            <select id="select-title-colour">
-              <option value="RoyalBlue">Royal Blue</option>
-              <option value="HotPink">Hot Pink</option>
-              <option value="Tomato">Tomato</option>
-              <option value="DarkSlateBlue">Slate Blue (original)</option>
-            </select>
-            <button id="submit-local-storage" class="bg-salmon">Save to local storage</button>
+          <div  class="form-group">
+            <label for="select-title-colour">Change title colour:</label>
+            <div class="form-row">
+              <select id="select-title-colour" class="outline-purple">
+                <option value="RoyalBlue">Royal Blue</option>
+                <option value="HotPink">Hot Pink</option>
+                <option value="Tomato">Tomato</option>
+                <option value="DarkSlateBlue">Slate Blue</option>
+              </select>
+              <button id="submit-local-storage" class="bg-purple">Save to localStorage</button>
+            </div>
           </div>
-          <a href="index.html" target="blank" class="bg-purple">Open page in new tab</a>
+          <a href="index.html" target="blank" class="btn bg-salmon">Open page in new tab</a>
         </div> 
       </div>
     </section>
