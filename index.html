@@ -7,16 +7,20 @@
   <link rel="stylesheet" type="text/css" href="styles.css" /> 
 </head>
 <body>
+  <main>
   <header>
-    <h1>HTML Web APIs</h1>
+    <h1 id="pgTitle">HTML Web APIs</h1>
+    <p>Click on the links below to find out more about some of the web APIs available with HTML5.</p>
   </header>
   <nav>
-    <ul>
+    <ul class="link-list">
       <li id="nav-item-dom"><button class="link-dom">The DOM</button></li>
       <li id="nav-item-drag"><button id="nav-link-drag">Drag and Drop</button></li>
       <li id="nav-item-full-screen"><button id="nav-link-full-screen" draggable="true">Full Screen</button></li>
       <li id="nav-item-geolocation"><button id="nav-link-geolocation">Geolocation</button></li>
       <li id="nav-item-audio"><button id="nav-link-audio">Audio context</button></li>
+      <li id="nav-item-fetch"><button id="nav-link-fetch">Fetch</button></li>
+      <li id="nav-item-webstorage"><button id="nav-link-webstorage">Web Storage</button></li>
     </ul>
   </nav>
 
@@ -38,9 +42,11 @@
       <div class="column">
         <div class="info bg-salmon">
           <h3>Try it out:</h3>
-          <button class="btn-box" id="toggle-bg">Change background colour</button>
-          <button class="btn-box" id="reset-bg">Reset background colour</button>   
-          <button class="btn-box link-dom">Close this section</button>
+          <ul class="link-list">
+            <li><button class="btn-box" id="toggle-bg">Change background colour</button></li>
+            <li><button class="btn-box" id="reset-bg">Reset background colour</button> </li>
+            <li><button class="btn-box link-dom">Close this section</button></li>
+          </ul>
         </div>
       </div>
       <div class="column">
@@ -51,7 +57,7 @@
             <li>Responding visually to user behaviour, such as scrolling or clicking</li>
             <li>Navigation</li>
           </ul>
-          <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API/Guide">MDN</a></p>
+          <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">MDN</a></p>
         </aside>
       </div>
     </section>
@@ -85,7 +91,7 @@
     <p>The Fullscreen API can be used to place a given element into full-screen mode, as well as to detect when the browser enters or exits full-screen mode.</p>
     <section class="container">
       <div class="column">
-        <div class="box bg-salmon column text-lg" id="item-full-screen">
+        <div class="box bg-salmon text-lg" id="item-full-screen">
           <button id="full-screen-toggle">Make me full screen</button>
         </div>
       </div>
@@ -161,11 +167,76 @@
     </section>
   </article>
 
+  <article id="article-fetch" class="hidden">
+    <h2>Fetch API</h2>
+    <p>The Fetch API provides an interface for fetching data or resources from different APIs or from a connected server.</p>
+    <p>This API provides an alternative to <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a> used in AJAX programming, but provides a more powerful and flexible feature set.</p>
+    <section class="container">
+      <div class="column">
+        <h3>Try it out:</h3>
+        <p>Fetch a random activity idea from <a href="https://www.boredapi.com/">boredapi.com</a>.</p>
+        <button class="btn-lg bg-purple" id="fetch-activity">Fetch activity idea</button>
+        <div class="info outline-pink hidden" id="activity"></div>
+      </div>
+      <div class="column">
+        <aside id="audio-info" class="info">
+          <h3>Uses for fetch:</h3>
+          <ul>
+            <li>Displaying data in real-time from a server</li>
+            <li>Creating news or social media feeds from third party sources</li>
+          </ul>
+          <p>Find more info on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">MDN</a></p>
+        </aside> 
+      </div>
+    </section>
+  </article>
+
+  <article id="article-webstorage" class="hidden">
+    <h2>Web Storage API</h2>
+    <p>The Web Storage API can be used to store small amounts of data without connecting to a server, useful when creating Progressive Web Apps.</p>
+    <p>The use of this API is synchronous, so the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache">Cache</a> interface and <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API">IndexedDB API</a> are more suitable for loading files offline, or for storing more complex data.</p>
+    <section class="container">
+      <div class="column">
+        <h3>Try it out:</h3>
+        <p>There are two mechanisms within Web Storage: <b>sessionStorage</b> and <b>localStorage</b>.</p>
+        <p>
+          Try updating the information below and then work out the difference 
+          between the two by refreshing the page and then closing and reopening the page in a new window.
+        </p>
+      </div>
+      <div class="column">
+        <div id="audio-info" class="form outline-pink">
+          <div class="form-group">
+            <label for="input-pg-title">Change page title:</label>
+            <div class="form-row">
+              <input type="text" id="input-pg-title" class="outline-purple" placeholder="HTML Web APIs">
+              <button id="submit-session-storage" class="bg-purple">Save to sessionStorage</button>
+            </div>
+          </div>
+          <div  class="form-group">
+            <label for="select-title-colour">Change title colour:</label>
+            <div class="form-row">
+              <select id="select-title-colour" class="outline-purple">
+                <option value="RoyalBlue">Royal Blue</option>
+                <option value="HotPink">Hot Pink</option>
+                <option value="Tomato">Tomato</option>
+                <option value="DarkSlateBlue">Slate Blue</option>
+              </select>
+              <button id="submit-local-storage" class="bg-purple">Save to localStorage</button>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+  </article>
+</main>
   <script src="src/nav.js"></script>
   <script src="src/dom.js"></script>
   <script src="src/dragAndDrop.js"></script>
   <script src="src/fullScreen.js"></script>
   <script src="src/geolocation.js"></script>
   <script src="src/audio.js"></script>
+  <script src="src/fetch.js"></script>
+  <script src="src/webStorage.js"></script>
 </body>
 </html>
